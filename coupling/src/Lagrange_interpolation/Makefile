@@ -1,11 +1,13 @@
 #choose your compiler, gfortran, ifort or others
-FC=ifort
+#FC=ifort
+FC = mpiifort
 FCFLAGS= -O -cpp#-g
 
 MPIFC=mpif90
 MPILIBS=
 
-CC=mpicc
+#CC=mpicc
+CC = mpiicc
 CFLAGS= -O
 
 #FLAGS_CHECK = -std=gnu -fimplicit-none -frange-check -fmax-errors=10 -pedantic -pedantic-errors -Waliasing -Wampersand -Wcharacter-truncation -Wline-truncation -Wsurprising -Wno-tabs -Wunderflow -ffpe-trap=invalid,zero,overflow -Wunused -Werror -O3
