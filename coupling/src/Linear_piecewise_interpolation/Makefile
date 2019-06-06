@@ -1,10 +1,12 @@
-FC=ifort
+#FC=ifort
+FC = mpiifort
 FCFLAGS= -cpp  #-g
 
 MPIFC=mpif90
 MPILIBS=
 
-CC=mpicc
+#CC=mpicc
+CC = mpiicc
 CFLAGS= -O
 
 #FLAGS_CHECK = -O0 -vec-report0 -std03 -implicitnone -warn truncated_source -warn argument_checking -warn unused -warn declarations -warn alignments -warn ignore_loc -warn usage -check all -align sequence -assume byterecl -ftz -traceback -ftrapuv  -check bounds
