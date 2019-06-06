@@ -1,6 +1,9 @@
-FC      = mpif77
-FC90    = ifort
-CC	= mpicc
+#FC      = mpif77
+#FC90    = ifort
+#CC	= mpicc
+FC      = mpiifort
+FC90 = mpiifort
+CC = mpiicc
 FFLAGS  = -O 
 #-check nobounds
 CFLAGS	= $(FFLAGS) 
