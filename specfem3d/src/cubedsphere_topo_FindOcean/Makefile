@@ -6,7 +6,8 @@ E = ../../bin
 O = ../../obj/cubedsphere_topo_FindOcean
 # L : libraries directory
 L = ../../lib
-FC = ifort
+#FC = ifort
+FC = mpiifort
 FCFLAGS = #-g
 #FLAGS_CHECK = -O3 -assume byterecl -traceback -ftrapuv -ftz -I$(IDIR)
 FLAGS_CHECK = -O3 -I$(IDIR)
@@ -19,7 +20,8 @@ FCCOMPILE_CHECK = ${FC} ${FCFLAGS} $(FLAGS_CHECK)
 FCCOMPILE_NO_CHECK = ${FC} ${FCFLAGS} $(FLAGS_NO_CHECK) 
 FCLINK = $(FCCOMPILE_NO_CHECK)
 
-CC = gcc
+#CC = gcc
+CC = mpiicc
 CFLAGS = -g -O2 $(CPPFLAGS)
 #COND_MPI_CPPFLAGS =
 
